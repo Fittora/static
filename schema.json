@@ -1,0 +1,106 @@
+{
+    "name": "fittora_product_schema",
+    "strict": true,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "product_title": {
+                "type": "string",
+                "description": "cleaner and more relevant product title"
+            },
+            "category": {
+                "type": "string",
+                "enum": [
+                    "dresses",
+                    "tops",
+                    "t-shirts",
+                    "jeans",
+                    "shirts",
+                    "sweaters",
+                    "jackets",
+                    "skirts",
+                    "shorts",
+                    "suits",
+                    "activewear",
+                    "sweatpants",
+                    "outerwear",
+                    "footwear",
+                    "bags",
+                    "accessories",
+                    "swimwear",
+                    "lingerie"
+                ]
+            },
+            "color_primary": {
+                "type": "string",
+                "enum": ["blue", "white", "black", "green", "navy blue", "grey", "pink", "beige", "brown", "red", "yellow", "maroon", "olive", "purple", "orange", "off white", "cream", "peach", "multi", "teal", "rust", "mustard", "khaki", "lavender", "sea green", "turquoise blue", "burgundy", "charcoal", "mauve", "coral", "lime green", "violet", "coffee brown", "magenta", "rose", "taupe", "tan", "gold", "camel brown", "nude", "grey melange", "silver", "fluorescent green", "copper", "assorted", "bronze", "rose gold", "steel", "champagne", "metallic"]
+            },
+            "color_secondary": {
+                "type": "string",
+                "enum": ["blue", "white", "black", "green", "navy blue", "grey", "pink", "beige", "brown", "red", "yellow", "maroon", "olive", "purple", "orange", "off white", "cream", "peach", "multi", "teal", "rust", "mustard", "khaki", "lavender", "sea green", "turquoise blue", "burgundy", "charcoal", "mauve", "coral", "lime green", "violet", "coffee brown", "magenta", "rose", "taupe", "tan", "gold", "camel brown", "nude", "grey melange", "silver", "fluorescent green", "copper", "assorted", "bronze", "rose gold", "steel", "champagne", "metallic"]
+            },
+            "occasion": {
+                "type": "string",
+                "enum": ["casual", "formal", "party", "daily", "ethnic", "maternity", "semiformal", "costume", "festive", "wedding"]
+            },
+            "fabric": {
+                "type": "string",
+                "enum": ["cotton", "linen", "hemp", "jute", "bamboo", "wool", "merino", "cashmere", "mohair", "alpaca", "silk", "leather", "suede", "fur", "polyester", "nylon", "acrylic", "spandex", "rayon", "viscose", "modal", "lyocell", "tencel", "acetate", "poly-cotton", "wool-silk", "rayon-spandex", "linen-cotton", "tencel-lycra", "jersey knit", "rib knit", "fleece", "plain weave", "twill weave", "satin weave", "moisture-wicking", "waterproof", "uv-protective", "fire-resistant", "velvet", "corduroy", "terrycloth", "chenille", "chiffon", "organza", "tulle", "denim", "canvas", "tweed", "organic cotton", "recycled fabrics", "piñatex", "cork fabric", "econyl"]
+            },
+            "length": {
+                "type": "string",
+                "enum": ["short", "knee-length", "midi", "ankle-length", "floor-length", "mini", "maxi", "cropped", "long", "three-quarter", "full-length", "tea-length", "above-knee", "below-knee"]
+            },
+            "pattern": {
+                "type": "string",
+                "enum": ["solid", "striped", "checked", "plaid", "polka dot", "floral", "paisley", "animal print", "geometric", "abstract", "tie-dye", "camouflage", "embroidered", "lace", "knit pattern", "herringbone", "chevron", "argyle", "pinstripe", "damask", "ikat", "batik", "tartan", "gradient", "ombre", "quilted", "printed text", "novelty print"]
+            },
+            "print_type": {
+                "type": "string",
+                "enum": ["floral", "animal", "geometric", "abstract", "paisley", "polka dot", "stripes", "checks", "camouflage", "tie-dye", "gradient", "ombre", "herringbone", "chevron", "damask", "ikat", "batik", "tribal", "mandala", "baroque", "watercolor", "novelty", "ethnic", "nautical", "marble", "tartan"]
+            },
+            "sleeve_length": {
+                "type": "string",
+                "enum": ["sleeveless", "cap sleeve", "short sleeve", "elbow-length", "three-quarter sleeve", "long sleeve", "full sleeve", "bell sleeve", "bishop sleeve", "raglan sleeve", "puff sleeve", "kimono sleeve", "cold-shoulder sleeve", "off-shoulder sleeve", "extra-long sleeve"]
+            },
+            "sleeve_styling": {
+                "type": "string",
+                "enum": ["regular", "bell", "bishop", "puff", "kimono", "raglan", "batwing", "dolman", "cold-shoulder", "off-shoulder", "flutter", "lantern", "cuffed", "rolled-up", "ruched", "balloon", "cape", "slit", "asymmetric", "ruffled", "accordion", "tulip", "illusion"]
+            },
+            "neck": {
+                "type": "string",
+                "enum": ["crew neck", "v-neck", "scoop neck", "boat neck", "cowl neck", "high neck", "turtle neck", "mock neck", "collar neck", "keyhole neck", "henley neck", "square neck", "plunging neckline", "halter neck", "bandeau neck", "off-shoulder neck", "sweetheart neck", "button-down neck", "funnel neck", "peter pan collar"]
+            },
+            "surface_styling": {
+                "type": "string",
+                "enum": ["smooth", "textured", "embroidered", "beaded", "printed", "pleated", "ruffled", "quilted", "padded", "crinkled", "distressed", "faded", "washed", "burnout", "metallic", "glittered", "shiny", "matte", "lace", "fringed", "stitched", "appliqué", "embroidered patch", "laser-cut", "woven", "painted", "tie-dye", "batik", "patchwork"]
+            },
+            "closure": {
+                "type": "string",
+                "enum": ["button", "zipper", "hook-and-eye", "snap", "velcro", "drawstring", "belt", "tie", "buckle", "toggle", "clasps", "press stud", "hook-and-loop", "side zipper", "back zipper", "front button", "side button", "broke closure", "magnetic clasp", "keyhole closure", "elastic waist", "wrap-around closure"]
+            },
+            "color_family": {
+                "type": "string",
+                "enum": ["pastel", "monochrome", "earthy", "indigo", "bright", "aqua"]
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "product_title",
+            "category",
+            "color_primary",
+            "color_secondary",
+            "occasion",
+            "fabric",
+            "length",
+            "pattern",
+            "print_type",
+            "sleeve_length",
+            "sleeve_styling",
+            "neck",
+            "surface_styling",
+            "closure",
+            "color_family"
+        ]
+    }
+}
